@@ -1,0 +1,60 @@
+body {
+    background-color: lightsteelblue;
+    max-width: 100vw;
+  }
+  .minw {
+    min-width: 250px;
+  }
+  .cardContainer,
+  .sortedCardContainer {
+    display: contents;
+  }
+  .card {
+    font-family: "Orelega One", serif;
+    background-color: white;
+    width: 180px;
+    height: 260px;
+    font-size: 50px;
+    text-align: left;
+  }
+  .num {
+    text-align: center;
+  }
+  .topSymbol {
+    text-align: left;
+  }
+  .bottomSymbol {
+    transform: rotate(180deg);
+  }
+  /* HEART */
+  .heart > .topSymbol::before {
+    content: "\2665"; /* Unicode for heart symbol */
+    color: red;
+  }
+  .heart > .bottomSymbol::before {
+    content: "\2665"; /* Unicode for heart symbol */
+    color: red;
+  }
+  /* SPADES */
+  .spade > .topSymbol::before {
+    content: "\2660"; /* Unicode for heart symbol */
+  }
+  .spade > .bottomSymbol::before {
+    content: "\2660"; /* Unicode for heart symbol */
+  }
+  /* DIAMONDS */
+  .diamond > .topSymbol::before {
+    content: "\2666"; /* Unicode for heart symbol */
+    color: red;
+  }
+  .diamond > .bottomSymbol::before {
+    content: "\2666"; /* Unicode for heart symbol */
+    color: red;
+  }
+  /* CLUB */
+  .club > .topSymbol::before {
+    content: "\2663"; /* Unicode for heart symbol */
+  }
+  .club > .bottomSymbol::before {
+    content: "\2663"; /* Unicode for heart symbol */
+  }
