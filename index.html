@@ -16,10 +16,10 @@
 
 <body>
     <div class="container-fluid">
-        <div class="d-flex mx-auto w-25">
+        <div class="d-flex mx-auto w-25 pb-3">
             <label for="numCardDrawInput" class="input-group-text border-0 rounded-0">
                 <small> <i class="fa-regular fa-face-smile"></i></small></label>
-            <input type="text" id="numCardDrawInput" class="form-control border-0 rounded-0" />
+            <input type="number" id="numCardDrawInput" placeholder="#" class="form-control border-0 rounded-0" />
             <button id="drawButton" class="btn btn-light w-100 rounded-0">
                 <strong>DRAW</strong>
             </button>
@@ -27,29 +27,14 @@
                 <strong>SORT</strong>
             </button>
         </div>
-        <div class="w-100 flex-container justify-content-between">
-            <div class="d-flex flex-wrap justify-content-center mt-4">
-                <!-- NAIPE starto-->
-                <div id="cardContainer" class="cardContainer">
-                    <div class="p-3 border border-success rounded-3 card d-none">
-                        <div class="topSymbol"></div>
-                        <div class="num"></div>
-                        <div class="bottomSymbol"></div>
-                    </div>
-                </div>
-                <!-- NAIPE end -->
-            </div>
-        </div>
-        <div class="flex-container justify-content-between">
-            <div class="d-flex flex-wrap justify-content-center mt-4">
-                <div id="sortingSteps" class="container justify-content-center
-            sortedCardContainer"></div>
-                <div id="sortedCardContainer" class="container justify-content-center
-            sortedCardContainer">
-                </div>
-            </div>
-        </div>
+        <h6 class="m-4">Draw Cards</h6>
+       <div id="cardContainer" class="d-flex"></div>
+       <h6 class="m-4">Sorted Cards</h6>
+       <div id="sortedCardContainer" class="d-flex"></div>
+       <h6 class="m-4">Sorted Cards Log</h6>
+       <div id="sortingStepsDiv" class="flex-container"></div>
 
+</div>
         <script src="main.js"></script>
 </body>
 
